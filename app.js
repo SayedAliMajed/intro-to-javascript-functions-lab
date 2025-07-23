@@ -100,7 +100,10 @@ function greetUser(name, time) {
 }
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
-
-
-
+console.log('=================================================')
+const maxOfThree = (numA,numB, NumC) => {
+  return Math.max(numA, numB, NumC);
+}
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+console.log('=================================================')
 
