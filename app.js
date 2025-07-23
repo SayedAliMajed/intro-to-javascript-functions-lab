@@ -79,6 +79,7 @@ function generateEmail(name, domain) {
 }
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 console.log('=================================================')
+
 function greetUser(name, time) {
   let greeting;
 
@@ -119,7 +120,32 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 const calculateTip = (billAmount, tip) => {
-   return +(billAmount * (tip / 100)).toFixed(2);
+   return (billAmount * (tip / 100)).toFixed(1);
 }
 
 console.log('Exercise 7 Result:', calculateTip(50, 20));
+console.log('=================================================')
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:}*/
+
+const convertTemperature = (temp, scale) => {
+  if (scale === 'C') {
+    return (temp * 9/5) + 32;
+    } else if (scale === 'F') {
+    return (temp - 32) * 5 / 9;
+  } else {
+    return 'Invalid scale. Use "C" for Celsius or "F" for Fahrenheit.';
+  }
+}
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('=================================================')
