@@ -79,6 +79,27 @@ function generateEmail(name, domain) {
 }
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 console.log('=================================================')
+function greetUser(name, time) {
+  let greeting;
+
+  switch (time) {
+    case 'morning':
+      greeting = `"Good morning, ${name}!"`;
+      break;
+    case 'afternoon':
+      greeting = `"Good afternoon, ${name}!"`;
+      break;
+    case 'evening':
+      greeting = `"Good evening, ${name}!"`;
+      break;
+    default:
+      greeting = `"Hello, ${name}!"`;
+  }
+
+  return greeting;
+}
+
+console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
 
 
